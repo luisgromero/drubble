@@ -1,1 +1,6 @@
 %h1 Hello there!
+
+- @posts.each do |post|
+  %h2= link_to post.title, post
+
+= link_to "Add New Drubble", new_post_path
